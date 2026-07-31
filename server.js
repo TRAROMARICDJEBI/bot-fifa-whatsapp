@@ -1,7 +1,9 @@
 const express = require('express');
 const axios = require('axios');
-const app = express();
-app.use(express.json());
+const { initDatabase } = require('./db');
+
+initDatabase();
+
 
 // CONFIGURATION GREEN API
 const ID_INSTANCE = "710722695528";
